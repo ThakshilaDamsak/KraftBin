@@ -62,6 +62,12 @@ header#header.header a.active {
 .options--top {
     border-radius: 5px;
 }
+
+.user-name {
+    margin:auto;
+    margin-top: 15px;
+    font-weight:500;
+}
 }
 
 @-moz-document url-prefix("https://kbin.social") {
@@ -209,27 +215,29 @@ textarea {
 @-moz-document url-prefix("https://kbin.social/search"), url-prefix("https://kbin.social/magazines") {
 /*Search page*/
 .flex {
-    gap: 0;
+    gap: 5px;
     justify-content: space-evenly;
+    transition: 0.2s;
 }
 
 form[method="get"] input {
     border-radius: 5px 0 0 5px;
     outline: none !important;
+    transition: 0.2s;
 }
 
 form[method="get"] input:focus {
-    border: var(--kbin-button-primary-hover-bg) solid 1px;
+    border: var(--kbin-button-primary-hover-bg) solid 2px;
+    transition: 0.2s;
 }
 
 form[method="get"] input:focus + .btn {
-    border: var(--kbin-button-primary-hover-bg) solid 1px;
+    border: var(--kbin-button-primary-hover-bg) solid 2px;
     border-left: none;
+    transition: 0.2s;
 }
 
 form[method="get"] .btn {
     border-radius: 0 5px 5px 0;
-    height: 54px;
-    aspect-ratio: 1;
 }
 }
