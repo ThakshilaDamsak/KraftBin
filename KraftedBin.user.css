@@ -1,0 +1,235 @@
+/* ==UserStyle==
+@name         KraftedBin
+@version      1.0.KoolBin20230802.14.25
+@namespace    ThakshilaDamsak
+@description  This is a customized version of Randdose's KoolBin userstyle.
+@author       ThakshilaDamsak
+@homepageURL  https://github.com/ThakshilaDamsak/KraftedBin/
+@license      GPL v3 or later
+==/UserStyle== */
+
+@-moz-document url-prefix("https://kbin.social") {
+/*Page*/
+html {
+    scroll-behavior: smooth;
+}
+
+#scroll-top {
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, .36);
+    border: solid;
+    border-width: 1px;
+    border-color: #6a6a6a8a;
+    border-radius: 10px;
+}
+
+#middle {
+    top: 0px;
+    margin-right: 5%;
+    margin-left: 5%;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 1200px) {
+    #middle {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+#middle .kbin-container {
+    grid-template-columns: 3fr 1fr;
+}
+
+/*Headerbar*/
+#header {
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(8px);
+}
+
+/*LOL*/
+header#header.header a.active {
+    background: transparent;
+}
+
+/*Drop down menus*/
+#header menu .dropdown__menu {
+    left: unset;
+    backdrop-filter: blur(8px);
+}
+
+/*Optionbar*/
+.options--top {
+    border-radius: 5px;
+}
+}
+
+@-moz-document url-prefix("https://kbin.social") {
+/*Posts*/
+.entry {
+    grid-template-areas: "vote title title" "vote image image" "vote image image" "vote desc desc  " "vote meta footer" "body body  body ";
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.no-image-placeholder {
+    display: none;
+}
+
+/*Post image wrapper*/
+.entry figure {
+    display: flex;
+    justify-content: center;
+    width: unset;
+    height: unset;
+    position: unset;
+    margin: unset;
+}
+
+/*Post Image*/
+.entry .no-image-placeholder img,
+.entry figure img {
+    max-height: 400px;
+    object-fit: unset;
+    position: unset;
+    height: unset;
+    border-radius: 5px;
+}
+
+.entry .no-image-placeholder,
+.entry figure {
+    justify-self: center;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.entry .no-image-placeholder .image-filler,
+.entry figure .image-filler {
+    width: unset;
+    height: unset;
+    background-position: unset;
+    top: unset;
+    left: unset;
+    right: unset;
+}
+
+/*Placeholder for posts with no image*/
+.entry .no-image-placeholder {
+    width: 200px;
+    height: 200px;
+}
+
+/*User and magazine info*/
+.entry .meta {
+    width: max-content;
+    align-self: unset;
+    margin: 6px;
+}
+
+/*Short description*/
+.entry .short-desc {
+    grid-area: desc;
+}
+
+/*Contains options like: comments, boost, report, etc*/
+.entry footer {
+    margin: auto;
+    margin-right: 20px;
+}
+}
+
+@-moz-document url-prefix("https://kbin.social") {
+/*Vote*/
+/*Vote wrapper*/
+.vote {
+    gap: 0;
+}
+
+aside.vote {
+    gap: 5px !important;
+}
+
+
+/*Vote buttons
+.vote button{
+}
+
+/*Upvote
+.vote .vote__up button{
+}
+
+.vote .active.vote__up button{
+}
+
+/*Downvote
+.vote .vote__down button{
+}
+
+.vote .active.vote__down button{
+} */
+}
+
+@-moz-document url-prefix("https://kbin.social") {
+/*Magazine*/
+#sidebar .section figure img {
+    aspect-ratio: 1;
+    border-radius: 10px;
+}
+
+.btn[title="block_magazine"],
+aside.user__follow > form[name*="block"] .btn {
+    border-radius: 0 5px 5px 0;
+}
+
+.magazine__subscribe div,
+.user__follow div {
+    border-radius: 5px 0 0 5px;
+}
+
+aside.magazine__subscribe > form[name*="subscribe"] .btn,
+aside.user__follow > form[name*="follow"] .btn {
+    border-radius: 0;
+}
+}
+
+@-moz-document url-prefix("https://kbin.social") {
+/*Components*/
+.section,
+.btn,
+select,
+textarea {
+    border-radius: 5px;
+}
+
+.btn {
+    cursor: pointer;
+}
+}
+
+@-moz-document url-prefix("https://kbin.social/search"), url-prefix("https://kbin.social/magazines") {
+/*Search page*/
+.flex {
+    gap: 0;
+    justify-content: space-evenly;
+}
+
+form[method="get"] input {
+    border-radius: 5px 0 0 5px;
+    outline: none !important;
+}
+
+form[method="get"] input:focus {
+    border: var(--kbin-button-primary-hover-bg) solid 1px;
+}
+
+form[method="get"] input:focus + .btn {
+    border: var(--kbin-button-primary-hover-bg) solid 1px;
+    border-left: none;
+}
+
+form[method="get"] .btn {
+    border-radius: 0 5px 5px 0;
+    height: 54px;
+    aspect-ratio: 1;
+}
+}
