@@ -64,9 +64,9 @@ header#header.header a.active {
 }
 
 .user-name {
-    margin:auto;
+    margin: auto;
     margin-top: 15px;
-    font-weight:500;
+    font-weight: 500;
 }
 }
 
@@ -130,6 +130,7 @@ header#header.header a.active {
     width: max-content;
     align-self: unset;
     margin: 6px;
+    margin-left: 10px;
 }
 
 /*Short description*/
