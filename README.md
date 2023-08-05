@@ -5,11 +5,17 @@ KraftedBin
 A userstyle that makes Kbin more clean and familiar.
 </h3>
 <p align="center">
-<b>This is a customized version of <a href="https://userstyles.world/user/Randdose">Randdose</a>'s  <a href="https://userstyles.world/style/10315/koolbin">KoolBin</a> userstyle.</b>
-<br>
-  
+<b>This is a customized version of <a href="https://userstyles.world/user/Randdose">Randdose</a>'s  <a href="https://userstyles.world/style/10315/koolbin">KoolBin</a> userstyle.</b></p>
+
+<p align="center">
+  <a href="https://userstyles.world/api/style/11353.user.css">
+    <img alt="Install directly with Stylus" src="https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg"/>
+  </a>
+
+<p align="center">
+
 <img src="https://github.com/ThakshilaDamsak/KraftedBin/assets/95128171/c7697cbb-2fbd-41c5-aee6-4500d5cc21b5" alt="Settings" width="450" />
-</p>
+ </p>
 
 
 <h2 align="center">
