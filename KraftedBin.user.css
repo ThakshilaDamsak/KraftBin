@@ -64,7 +64,6 @@ header#header.header a.active {
 
 menu {
     transition: 0.2s;
-    
 }
 
 .dropdown__menu {
@@ -79,7 +78,7 @@ menu {
 }
 
 .options {
-        box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .11);
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .11);
     transition: 0.2s;
 }
 
@@ -88,7 +87,7 @@ menu {
 }
 
 .kbin-promo {
-    box-shadow:none;
+    box-shadow: none;
 }
 
 .user-name {
@@ -176,6 +175,11 @@ menu {
 .entry footer {
     margin: auto;
     margin-right: 20px;
+    transition: 0.2s;
+}
+
+.preview img {
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .11);
     transition: 0.2s;
 }
 }
@@ -278,5 +282,6 @@ form[method="get"] input:focus + .btn {
 
 form[method="get"] .btn {
     border-radius: 0 5px 5px 0;
+    transition: 0.2s;
 }
 }
