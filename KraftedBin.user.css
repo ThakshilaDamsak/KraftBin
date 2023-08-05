@@ -1,287 +1,338 @@
 /* ==UserStyle==
 @name         KraftedBin
-@version      1.0.KoolBin20230802.14.25
+@version      1.2
 @namespace    ThakshilaDamsak
-@description  This is a customized version of Randdose's KoolBin userstyle.
-@author       ThakshilaDamsak
+@description  A userstyle that makes Kbin more clean and familiar. A customized version of of Randdose's KoolBin userstyle.
+@author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
 @homepageURL  https://github.com/ThakshilaDamsak/KraftedBin/
-@license      GPL v3 or later
+@license      GPL v3
+@preprocessor default
+
+@var select KraftBin-shadow "Extra Shadows" {
+ "Enabled": "0px 5px 25px 0px rgba(0, 0, 0, .11)",
+ "Disabled": "none",
+  }
+
+@var select alertToggle "Federated Warnings" {
+ "Enabled": "flex",
+ "Disabled": "none",
+  }
+
+@var select containerRatio-sidebar "Sidebar Size" {
+ "Small": "10fr",
+ "Medium": "13fr",
+"Large": "15fr",
+ "Custom": "var(--containerRatio-sidebar-custom, 2fr)",
+  }
+
+@var text containerRatio-sidebar-custom "Custom Sidebar Size" "2fr"
+
+@var select marginsToggle "Margins on sides" {
+ "Default": "5%",
+ "Custom": "var(--marginsToggle-custom, none)",
+"Disabled": "none",
+  }
+
+@var text marginsToggle-custom "Custom Margin Size" "10%"
+
 ==/UserStyle== */
+@-moz-document url-prefix("https://kbin.social"),
+url-prefix("https://karab.in"),
+url-prefix("https://fedia.io") {
+    /*Page*/
+    html {
+        scroll-behavior: smooth;
+    }
 
-@-moz-document url-prefix("https://kbin.social") {
-/*Page*/
-html {
-    scroll-behavior: smooth;
-}
+    #scroll-top {
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, .26);
+        border: solid;
+        border-width: 1px;
+        border-color: #6a6a6a8a;
+        border-radius: 8px;
+        transition: 0.2s;
+    }
 
-#scroll-top {
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, .26);
-    border: solid;
-    border-width: 1px;
-    border-color: #6a6a6a8a;
-    border-radius: 8px;
-    transition: 0.2s;
-}
-
-#middle {
-    top: 0px;
-    margin-right: 5%;
-    margin-left: 5%;
-    transition: 0.2s;
-}
-
-@media screen and (max-width: 1200px) {
     #middle {
-        margin-right: 0;
-        margin-left: 0;
+        top: 0px;
+        margin-right: var(--marginsToggle);
+        margin-left: var(--marginsToggle);
+        transition: 0.2s;
+    }
+
+    @media screen and (max-width: 1200px) {
+        #middle {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    #middle .kbin-container {
+        grid-template-columns: 30fr var(--containerRatio-sidebar)
+    }
+
+    /*Headerbar*/
+    #header {
+        position: sticky;
+        top: 0;
+        backdrop-filter: blur(8px);
+        transition: 0.2s;
+    }
+
+    /*LOL*/
+    header#header.header a.active {
+        background: transparent;
+    }
+
+    /*Drop down menus*/
+    #header menu .dropdown__menu {
+        left: unset;
+        backdrop-filter: blur(8px);
+        transition: 0.2s;
+        box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .3);
+    }
+
+    menu {
+        transition: 0.2s;
+    }
+
+    .dropdown__menu {
+        box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .3);
+    }
+
+    /*Optionbar*/
+    .options--top {
+        border-radius: 5px;
+        box-shadow: var(--KraftBin-shadow) !important;
+        transition: 0.2s;
+    }
+
+    .options {
+        box-shadow: var(--KraftBin-shadow) !important;
+        transition: 0.2s;
+    }
+
+    .section {
+        box-shadow: var(--KraftBin-shadow) !important;
+    }
+
+    .kbin-promo {
+        box-shadow: none;
+    }
+
+    .user-name {
+        margin: auto;
+        margin-top: 15px;
+        font-weight: 500;
+    }
+
+    .popover {
+        transition: 0.2s;
+    }
+
+    .alert__info {
+        display: var(--alertToggle);
     }
 }
 
-#middle .kbin-container {
-    grid-template-columns: 3fr 1fr;
+@-moz-document url-prefix("https://kbin.social"),
+url-prefix("https://karab.in"),
+url-prefix("https://fedia.io") {
+    /*Posts*/
+    .entry {
+        grid-template-areas: "vote title title" "vote image image" "vote image image" "vote desc desc  " "vote meta footer" "body body  body ";
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: var(--KraftBin-shadow) !important;
+        transition: 0.2s;
+    }
+
+    .no-image-placeholder {
+        display: none;
+    }
+
+    /*Post image wrapper*/
+    .entry figure {
+        display: flex;
+        justify-content: center;
+        width: unset;
+        height: unset;
+        position: unset;
+        margin: unset;
+    }
+
+    /*Post Image*/
+    .entry .no-image-placeholder img,
+    .entry figure img {
+        max-height: 400px;
+        object-fit: unset;
+        position: unset;
+        height: unset;
+        border-radius: 5px;
+    }
+
+    .entry .no-image-placeholder,
+    .entry figure {
+        justify-self: center;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    .entry .no-image-placeholder .image-filler,
+    .entry figure .image-filler {
+        width: unset;
+        height: unset;
+        background-position: unset;
+        top: unset;
+        left: unset;
+        right: unset;
+    }
+
+    /*Placeholder for posts with no image*/
+    .entry .no-image-placeholder {
+        width: 200px;
+        height: 200px;
+    }
+
+    /*User and magazine info*/
+    .entry .meta {
+        width: max-content;
+        align-self: unset;
+        margin: 6px;
+        margin-left: 10px;
+    }
+
+    /*Short description*/
+    .entry .short-desc {
+        grid-area: desc;
+    }
+
+    /*Contains options like: comments, boost, report, etc*/
+    .entry footer {
+        margin: auto;
+        margin-right: 20px;
+        transition: 0.2s;
+    }
+
+    .preview img {
+        box-shadow: var(--KraftBin-shadow) !important;
+        transition: 0.2s;
+    }
 }
 
-/*Headerbar*/
-#header {
-    position: sticky;
-    top: 0;
-    backdrop-filter: blur(8px);
+@-moz-document url-prefix("https://kbin.social"),
+url-prefix("https://karab.in"),
+url-prefix("https://fedia.io") {
+    /*Vote*/
+    /*Vote wrapper*/
+    .vote {
+        gap: 0;
+        transition: 0.2s;
+    }
+
+    aside.vote {
+        gap: 5px !important;
+    }
+
+/*Vote buttons*/
+.vote button{
+	border: 1px;
     transition: 0.2s;
 }
 
-/*LOL*/
-header#header.header a.active {
-    background: transparent;
-}
-
-/*Drop down menus*/
-#header menu .dropdown__menu {
-    left: unset;
-    backdrop-filter: blur(8px);
-    transition: 0.2s;
-    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .3);
-}
-
-menu {
-    transition: 0.2s;
-}
-
-.dropdown__menu {
-    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .3);
-}
-
-/*Optionbar*/
-.options--top {
-    border-radius: 5px;
-    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .11);
-    transition: 0.2s;
-}
-
-.options {
-    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .11);
-    transition: 0.2s;
-}
-
-.section {
-    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .11);
-}
-
-.kbin-promo {
-    box-shadow: none;
-}
-
-.user-name {
-    margin: auto;
-    margin-top: 15px;
-    font-weight: 500;
-}
-
-.popover {
-    transition: 0.2s;
-}
-}
-
-@-moz-document url-prefix("https://kbin.social") {
-/*Posts*/
-.entry {
-    grid-template-areas: "vote title title" "vote image image" "vote image image" "vote desc desc  " "vote meta footer" "body body  body ";
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .11);
-    transition: 0.2s;
-}
-
-.no-image-placeholder {
-    display: none;
-}
-
-/*Post image wrapper*/
-.entry figure {
-    display: flex;
-    justify-content: center;
-    width: unset;
-    height: unset;
-    position: unset;
-    margin: unset;
-}
-
-/*Post Image*/
-.entry .no-image-placeholder img,
-.entry figure img {
-    max-height: 400px;
-    object-fit: unset;
-    position: unset;
-    height: unset;
-    border-radius: 5px;
-}
-
-.entry .no-image-placeholder,
-.entry figure {
-    justify-self: center;
-    border-radius: 5px;
-    margin: 10px;
-}
-
-.entry .no-image-placeholder .image-filler,
-.entry figure .image-filler {
-    width: unset;
-    height: unset;
-    background-position: unset;
-    top: unset;
-    left: unset;
-    right: unset;
-}
-
-/*Placeholder for posts with no image*/
-.entry .no-image-placeholder {
-    width: 200px;
-    height: 200px;
-}
-
-/*User and magazine info*/
-.entry .meta {
-    width: max-content;
-    align-self: unset;
-    margin: 6px;
-    margin-left: 10px;
-}
-
-/*Short description*/
-.entry .short-desc {
-    grid-area: desc;
-}
-
-/*Contains options like: comments, boost, report, etc*/
-.entry footer {
-    margin: auto;
-    margin-right: 20px;
-    transition: 0.2s;
-}
-
-.preview img {
-    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .11);
-    transition: 0.2s;
-}
-}
-
-@-moz-document url-prefix("https://kbin.social") {
-/*Vote*/
-/*Vote wrapper*/
-.vote {
-    gap: 0;
-    transition: 0.2s;
-}
-
-aside.vote {
-    gap: 5px !important;
-}
-
-
-/*Vote buttons */
-.vote button {
-    transition: 0.2s;
-}
-
-/*Upvote
+/*Upvote*/
 .vote .vote__up button{
+	border-radius: 5px;
 }
 
 .vote .active.vote__up button{
+	border-color: var(--kbin-success-color);
 }
 
-/*Downvote
+/*Downvote*/
 .vote .vote__down button{
+	border-radius: 5px;
 }
 
 .vote .active.vote__down button{
-} */
-}
-
-@-moz-document url-prefix("https://kbin.social") {
-/*Magazine*/
-#sidebar .section figure img {
-    aspect-ratio: 1;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, .15);
-}
-
-.btn[title="block_magazine"],
-aside.user__follow > form[name*="block"] .btn {
-    border-radius: 0 5px 5px 0;
-}
-
-.magazine__subscribe div,
-.user__follow div {
-    border-radius: 5px 0 0 5px;
-}
-
-aside.magazine__subscribe > form[name*="subscribe"] .btn,
-aside.user__follow > form[name*="follow"] .btn {
-    border-radius: 0;
+	border-color: var(--kbin-danger-color);
 }
 }
 
-@-moz-document url-prefix("https://kbin.social") {
-/*Components*/
-.section,
-.btn,
-select,
-textarea {
-    border-radius: 5px;
+@-moz-document url-prefix("https://kbin.social"),
+url-prefix("https://karab.in"),
+url-prefix("https://fedia.io") {
+    /*Magazine*/
+    #sidebar .section figure img {
+        aspect-ratio: 1;
+        border-radius: 10px;
+        box-shadow: var(--KraftBin-shadow) !important;
+    }
+
+    .btn[title="block_magazine"],
+    aside.user__follow > form[name*="block"] .btn {
+        border-radius: 0 5px 5px 0;
+    }
+
+    .magazine__subscribe div,
+    .user__follow div {
+        border-radius: 5px 0 0 5px;
+    }
+
+    aside.magazine__subscribe > form[name*="subscribe"] .btn,
+    aside.user__follow > form[name*="follow"] .btn {
+        border-radius: 0;
+    }
 }
 
-.btn {
-    cursor: pointer;
-}
+@-moz-document url-prefix("https://kbin.social"),
+url-prefix("https://karab.in"),
+url-prefix("https://fedia.io") {
+    /*Components*/
+    .section,
+    .btn,
+    select,
+    textarea {
+        border-radius: 5px;
+    }
+
+    .btn {
+        cursor: pointer;
+    }
 }
 
-@-moz-document url-prefix("https://kbin.social/search"), url-prefix("https://kbin.social/magazines") {
-/*Search page*/
-.flex {
-    gap: 5px;
-    justify-content: space-evenly;
-    transition: 0.2s;
-}
+@-moz-document url-prefix("https://kbin.social/search"),
+url-prefix("https://kbin.social/magazines"),
+url-prefix("https://karab.in/search"),
+url-prefix("https://karab.in/magazines"),
+url-prefix("https://fedia.io/search"),
+url-prefix("https://fedia.io/magazines") {
+    /*Search page*/
+    .flex {
+        gap: 5px;
+        justify-content: space-evenly;
+        transition: 0.2s;
+    }
 
-form[method="get"] input {
-    border-radius: 5px 0 0 5px;
-    outline: none !important;
-    transition: 0.2s;
-}
+    form[method="get"] input {
+        border-radius: 5px 0 0 5px;
+        outline: none !important;
+        transition: 0.2s;
+    }
 
-form[method="get"] input:focus {
-    border: var(--kbin-button-primary-hover-bg) solid 2px;
-    transition: 0.2s;
-}
+    form[method="get"] input:focus {
+        border: var(--kbin-button-primary-hover-bg) solid 2px;
+        transition: 0.2s;
+    }
 
-form[method="get"] input:focus + .btn {
-    border: var(--kbin-button-primary-hover-bg) solid 2px;
-    border-left: none;
-    transition: 0.2s;
-}
+    form[method="get"] input:focus + .btn {
+        border: var(--kbin-button-primary-hover-bg) solid 2px;
+        border-left: none;
+        transition: 0.2s;
+    }
 
-form[method="get"] .btn {
-    border-radius: 0 5px 5px 0;
-    transition: 0.2s;
-}
+    form[method="get"] .btn {
+        border-radius: 0 5px 5px 0;
+        transition: 0.2s;
+    }
 }
