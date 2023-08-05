@@ -5,7 +5,7 @@ KraftBin
     Cleaner and familiar look for Kbin.
 </h3>
 <p align="center">
-    <a href="https://userstyles.world/style/11353/kraftedbin">
+    <a href="https://userstyles.world/style/11353/kraftbin">
     <img alt="Visit the page on userstyles.world" src="https://img.shields.io/badge/Visit%20the%20page%20on-userstyles.world-00adad.svg"/>
   </a>
   <a href="https://userstyles.world/api/style/11353.user.css">
