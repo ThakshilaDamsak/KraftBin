@@ -234,29 +234,29 @@ url-prefix("https://fedia.io") {
         gap: 5px !important;
     }
 
-/*Vote buttons*/
-.vote button{
-	border: 1px;
-    transition: 0.2s;
-}
+    /*Vote buttons*/
+    .vote button {
+        border: 1px;
+        transition: 0.2s;
+    }
 
-/*Upvote*/
-.vote .vote__up button{
-	border-radius: 5px;
-}
+    /*Upvote*/
+    .vote .vote__up button {
+        border-radius: 5px;
+    }
 
-.vote .active.vote__up button{
-	border-color: var(--kbin-success-color);
-}
+    .vote .active.vote__up button {
+        border-color: var(--kbin-success-color);
+    }
 
-/*Downvote*/
-.vote .vote__down button{
-	border-radius: 5px;
-}
+    /*Downvote*/
+    .vote .vote__down button {
+        border-radius: 5px;
+    }
 
-.vote .active.vote__down button{
-	border-color: var(--kbin-danger-color);
-}
+    .vote .active.vote__down button {
+        border-color: var(--kbin-danger-color);
+    }
 }
 
 @-moz-document url-prefix("https://kbin.social"),
