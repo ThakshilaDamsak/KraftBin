@@ -1,8 +1,8 @@
 <h1 align="center">
-KraftedBin
+KraftBin
 </h1>
 <h3 align="center">
-A userstyle that makes Kbin more clean and familiar.
+    Cleaner and familiar look for Kbin.
 </h3>
 <p align="center">
 <b>This is a customized version of <a href="https://userstyles.world/user/Randdose">Randdose</a>'s  <a href="https://userstyles.world/style/10315/koolbin">KoolBin</a> userstyle.</b></p>
