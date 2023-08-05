@@ -1,6 +1,18 @@
-# KraftedBin
+<h1 align="center">
+KraftedBin
+</h1>
+<h3 align="center">
 A userstyle that makes Kbin more clean and familiar.
-#### This is a customized version of [Randdose](https://userstyles.world/user/Randdose)'s [KoolBin](https://userstyles.world/style/10315/koolbin) userstyle.
+</h3>
+<p align="center">
+<b>This is a customized version of <a href="https://userstyles.world/user/Randdose">Randdose</a>'s  <a href="https://userstyles.world/style/10315/koolbin">KoolBin</a> userstyle.</b>
+<br>
+  
+<img src="https://github.com/ThakshilaDamsak/KraftedBin/assets/95128171/c7697cbb-2fbd-41c5-aee6-4500d5cc21b5" alt="Settings" width="450" />
+</p>
+
+# Features
+
 
 # Screenshots
 
