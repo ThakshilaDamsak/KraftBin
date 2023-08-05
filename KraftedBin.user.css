@@ -15,11 +15,12 @@ html {
 }
 
 #scroll-top {
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, .36);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, .26);
     border: solid;
     border-width: 1px;
     border-color: #6a6a6a8a;
-    border-radius: 10px;
+    border-radius: 8px;
+    transition: 0.2s;
 }
 
 #middle {
@@ -45,6 +46,7 @@ html {
     position: sticky;
     top: 0;
     backdrop-filter: blur(8px);
+    transition: 0.2s;
 }
 
 /*LOL*/
@@ -56,17 +58,47 @@ header#header.header a.active {
 #header menu .dropdown__menu {
     left: unset;
     backdrop-filter: blur(8px);
+    transition: 0.2s;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .3);
+}
+
+menu {
+    transition: 0.2s;
+    
+}
+
+.dropdown__menu {
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .3);
 }
 
 /*Optionbar*/
 .options--top {
     border-radius: 5px;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .11);
+    transition: 0.2s;
+}
+
+.options {
+        box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .11);
+    transition: 0.2s;
+}
+
+.section {
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .11);
+}
+
+.kbin-promo {
+    box-shadow:none;
 }
 
 .user-name {
     margin: auto;
     margin-top: 15px;
     font-weight: 500;
+}
+
+.popover {
+    transition: 0.2s;
 }
 }
 
@@ -76,6 +108,8 @@ header#header.header a.active {
     grid-template-areas: "vote title title" "vote image image" "vote image image" "vote desc desc  " "vote meta footer" "body body  body ";
     padding: 5px;
     border-radius: 5px;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .11);
+    transition: 0.2s;
 }
 
 .no-image-placeholder {
@@ -142,6 +176,7 @@ header#header.header a.active {
 .entry footer {
     margin: auto;
     margin-right: 20px;
+    transition: 0.2s;
 }
 }
 
@@ -150,6 +185,7 @@ header#header.header a.active {
 /*Vote wrapper*/
 .vote {
     gap: 0;
+    transition: 0.2s;
 }
 
 aside.vote {
@@ -157,8 +193,9 @@ aside.vote {
 }
 
 
-/*Vote buttons
-.vote button{
+/*Vote buttons */
+.vote button {
+    transition: 0.2s;
 }
 
 /*Upvote
@@ -181,6 +218,7 @@ aside.vote {
 #sidebar .section figure img {
     aspect-ratio: 1;
     border-radius: 10px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, .15);
 }
 
 .btn[title="block_magazine"],
