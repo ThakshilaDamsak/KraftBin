@@ -16,6 +16,13 @@ A userstyle that makes Kbin more clean and familiar.
 
 <img src="https://github.com/ThakshilaDamsak/KraftedBin/assets/95128171/c7697cbb-2fbd-41c5-aee6-4500d5cc21b5" alt="Settings" width="450" />
  </p>
+ 
+<p align="center">
+<b>You can combine this userstyle with <a href="https://userstyles.world/user/NeighborlyFedora">NeighborlyFedora</a>'s  <a href="https://userstyles.world/style/10478/idkbin">Idkbin</a> style for a more modern look.*</b>
+  <br>
+  <i>*Make sure to turn off "Thumbnails on left" option on Idkbin userstyle.</i>
+</p>
+
 
 
 <h2 align="center">
