@@ -18,7 +18,7 @@ KraftBin
  </p>
  
 <p align="center">
-<b>You can combine this userstyle with <a href="https://userstyles.world/user/NeighborlyFedora">NeighborlyFedora</a>'s  <a href="https://userstyles.world/style/10478/idkbin">Idkbin</a> style for a more modern look.*</b>
+<b>You can combine this userstyle with <a href="https://userstyles.world/user/NeighborlyFedora">NeighborlyFedora</a>'s  <a href="https://userstyles.world/style/10478/idkbin">Idkbin</a> style for a more modern look and better accessibility*</b>
   <br>
   <i>*Make sure to turn off "Thumbnails on left" option on Idkbin userstyle.</i>
 </p>
