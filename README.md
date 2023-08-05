@@ -8,6 +8,9 @@ A userstyle that makes Kbin more clean and familiar.
 <b>This is a customized version of <a href="https://userstyles.world/user/Randdose">Randdose</a>'s  <a href="https://userstyles.world/style/10315/koolbin">KoolBin</a> userstyle.</b></p>
 
 <p align="center">
+    <a href="https://userstyles.world/style/11353/kraftedbin">
+    <img alt="Visit the page on userstyles.world" src="https://img.shields.io/badge/Visit%20the%20page%20on-userstyles.world-00adad.svg"/>
+  </a>
   <a href="https://userstyles.world/api/style/11353.user.css">
     <img alt="Install directly with Stylus" src="https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg"/>
   </a>
