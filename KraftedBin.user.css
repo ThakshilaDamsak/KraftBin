@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftedBin
-@version      1.2
+@version      1.3
 @namespace    ThakshilaDamsak
 @description  A userstyle that makes Kbin more clean and familiar. A customized version of of Randdose's KoolBin userstyle.
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -21,16 +21,16 @@
 @var select containerRatio-sidebar "Sidebar Size" {
  "Small": "10fr",
  "Medium": "13fr",
-"Large": "15fr",
- "Custom": "var(--containerRatio-sidebar-custom, 2fr)",
+ "Large": "15fr",
+ "Custom": "var(--containerRatio-sidebar-custom, 5fr)",
   }
 
-@var text containerRatio-sidebar-custom "Custom Sidebar Size" "2fr"
+@var text containerRatio-sidebar-custom "Custom Sidebar Size" "20fr"
 
 @var select marginsToggle "Margins on sides" {
  "Default": "5%",
  "Custom": "var(--marginsToggle-custom, none)",
-"Disabled": "none",
+ "Disabled": "none",
   }
 
 @var text marginsToggle-custom "Custom Margin Size" "10%"
