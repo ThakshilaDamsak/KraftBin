@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      2.1.1
+@version      2.2.1
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -202,6 +202,10 @@ url-prefix("https://fedia.io") {
 		display: var(--kbinPromo-display) !important;
 	}
 
+	.section--no-bg {
+		box-shadow: none !important;
+	}
+
 	.related-magazines {
 		display: var(--magazinesToggle);
 	}
@@ -233,6 +237,10 @@ url-prefix("https://fedia.io") {
 
 	#scroll-top {
 		scale: var(--scrolltopToggle);
+	}
+
+	article {
+		padding: 0px !important;
 	}
 }
 
@@ -299,7 +307,7 @@ url-prefix("https://fedia.io") {
 	.entry .meta {
 		width: max-content;
 		align-self: unset;
-		margin: 6px;
+		margin: 10px;
 		margin-left: 10px;
 		grid-area: footer;
 	}
@@ -334,13 +342,38 @@ url-prefix("https://fedia.io") {
 
 	aside.vote {
 		gap: 5px !important;
+		padding: 10px;
+		background: #a3a3a314;
+		margin: 0px !important;
+		border-radius: 5px;
+		border: 1px;
 	}
 
 	/*Vote buttons*/
 	.vote button {
 		border: 1px;
 		transition: 0.2s;
+		box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .05);
+		background: var(--kbin-body-bg);
+		border: solid;
+		border-width: 1px;
+		border-color: #89898921;
 	}
+
+	.post .vote,
+	.comment .vote {
+		background: #00800000;
+		padding: 0px !important;
+	}
+
+	.comment .vote button,
+	.post .vote button {
+		background: var(--kbin-bg-nth);
+		margin-top: 5px;
+		height: 25px;
+		box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .05);
+	}
+
 
 	/*Upvote*/
 	.vote .vote__up button {
@@ -400,6 +433,7 @@ url-prefix("https://fedia.io") {
 
 	.btn {
 		cursor: pointer;
+		transition: 0.2s;
 	}
 
 	.formatted {
