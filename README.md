@@ -2,7 +2,7 @@
 KraftBin
 </h1>
 <h3 align="center">
-    Customizable Cleaner and familiar look for Kbin.
+    Customizable, Cleaner and familiar look for Kbin.
 </h3>
 <p align="center">
     <a href="https://userstyles.world/style/11353/kraftbin">
