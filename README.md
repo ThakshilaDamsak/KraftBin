@@ -27,13 +27,13 @@ KraftBin
 Screenshots
 </h2>
 
-![Screenshot 2023-08-06 at 16-56-30 lemmyworld - kbin social](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/6ca111d2-b8e1-4181-b4fc-b28f37997253)
-![Screenshot 2023-08-06 at 16-54-55 Commented - kbin social - Explore Fediverse](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/e685ff9e-6341-48f5-9234-0d282d18f7f7)
-![Screenshot 2023-08-06 at 17-00-41 Top - kbin social - Explore Fediverse](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/2f17206a-c3cc-4831-b841-92aea98a813a)
-![Screenshot 2023-08-06 at 17-02-14 Search - kbin social](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/93daac23-94f5-44af-a7cf-f5a5c81fd657)
-![Screenshot 2023-08-06 at 17-08-56 unixporn - kbin social](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/f238d4c6-b8d3-4ee9-9ca2-3dd826d265b3)
-![Screenshot_20230806_170428](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/7106c9fe-12ee-4a7b-9604-928361cdfc19)
-![Screenshot_20230806_170252](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/2c9bc01e-6ef4-44df-9cba-3bd2dc5e4f50)
+![Screenshot 2023-08-06 at 17-50-27 lemmyworld - kbin social](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/69a3a4c6-48b5-4027-b343-1548d59528e2)
+![Screenshot 2023-08-06 at 17-39-45 kbin social - Explore Fediverse](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/4f3f3920-44a4-4862-ae8c-6fe03f39c188)
+![Screenshot 2023-08-06 at 17-42-25 unixporn - kbin social](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/33db18d8-6ae0-44e8-b441-131d547eb324)
+![Screenshot 2023-08-06 at 17-52-00 Search - kbin social](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/9ae12be3-3bff-4857-bc2d-c765242dba9f)
+
+#### Compact Mode
+![Screenshot_20230806_175317](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/b6177c5b-a215-4149-95ec-bf767a13582c)
 
 
 #
