@@ -358,7 +358,7 @@ url-prefix("https://fedia.io") {
 		padding: 10px;
 		background: #a3a3a314;
 		margin: 0px !important;
-		border-radius: 5px;
+		border-radius: 5px 0 0 5px;
 		border: 1px;
 	}
 
