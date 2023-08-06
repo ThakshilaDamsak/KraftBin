@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      1.5
+@version      1.5.1
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -28,7 +28,7 @@
 
 @var text containerRatio-sidebar-custom "Custom Sidebar Size" "20fr"
 
-@var select marginsToggle "Margins on sides" {
+@var select marginsToggle "Margins on Sides (Only on Widescreens)" {
  "Default": "5%",
  "Custom": "var(--marginsToggle-custom, none)",
  "Disabled": "none",
@@ -300,9 +300,9 @@ url-prefix("https://fedia.io") {
     .btn {
         cursor: pointer;
     }
-            
+
     .formatted {
-     margin-left:70px;   
+        margin-left: 70px;
     }
 }
 
