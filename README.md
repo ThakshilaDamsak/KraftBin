@@ -14,7 +14,7 @@ KraftBin
 
 <p align="center">
 
-<img src="https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/03cab8ec-edb1-485f-bd1e-4ed25154a508" alt="Settings" width="400" />
+<img src="https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/d188cd6a-babb-4eb6-91a4-9ce02c6c6d36" alt="Settings" />
  </p>
  
 <p align="center">
