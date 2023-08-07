@@ -36,6 +36,9 @@ IDKraftBin
 Screenshots
 </h2>
 
+<details>
+  <summary align="center"><b>Click to see.</b></summary>
+
 ![Screenshot 2023-08-06 at 17-50-27 lemmyworld - kbin social](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/69a3a4c6-48b5-4027-b343-1548d59528e2)
 ![Screenshot 2023-08-06 at 17-39-45 kbin social - Explore Fediverse](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/4f3f3920-44a4-4862-ae8c-6fe03f39c188)
 ![Screenshot 2023-08-06 at 17-42-25 unixporn - kbin social](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/33db18d8-6ae0-44e8-b441-131d547eb324)
@@ -44,6 +47,7 @@ Screenshots
 #### Compact Mode
 ![Screenshot_20230806_175317](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/b6177c5b-a215-4149-95ec-bf767a13582c)
 
+</details>
 
 #
 
