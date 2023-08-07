@@ -17,6 +17,11 @@ KraftBin
 <img src="https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/d188cd6a-babb-4eb6-91a4-9ce02c6c6d36" alt="Settings" />
  </p>
 
+### v2.3.1
+- Added ability to change corner radius.
+- Added ability to enable or disable top margin.
+- Few more tweaks and fixes.
+
 <h2 align="center">
 IDKraftBin
 </h2>
