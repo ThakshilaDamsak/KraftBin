@@ -16,12 +16,21 @@ KraftBin
 
 <img src="https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/d188cd6a-babb-4eb6-91a4-9ce02c6c6d36" alt="Settings" />
  </p>
+
+<h2 align="center">
+IDKraftBin
+</h2>
  
 <p align="center">
-<b>You can combine this userstyle with <a href="https://userstyles.world/user/NeighborlyFedora">NeighborlyFedora</a>'s  <a href="https://userstyles.world/style/10478/idkbin">Idkbin</a> style for a more modern look and better accessibility*</b>
+<b>You can combine this userstyle with my <a href="https://github.com/ThakshilaDamsak/IDKraftBin/#readme">IDKraftBin</a> userstyle for a more modern look and better accessibility</b>
   <br>
-  <i>*Make sure to turn off "Thumbnails on left" option on Idkbin userstyle.</i>
 </p>
+<p align="center">
+
+<a href="https://github.com/ThakshilaDamsak/IDKraftBin/#readme">
+    <img alt="Install IDKraftBin" src="https://img.shields.io/badge/Install-IDKraftBin-00adad.svg"/>
+  </a>
+  </p>
 
 <h2 align="center">
 Screenshots
@@ -39,5 +48,11 @@ Screenshots
 #
 
 <p align="center">
-<i>Derived from <a href="https://userstyles.world/user/Randdose">Randdose</a>'s <a href="https://userstyles.world/style/10315/koolbin">KoolBin</a> userstyle.</i>
+<i>KraftBin is Derived from <a href="https://userstyles.world/user/Randdose">Randdose</a>'s <a href="https://userstyles.world/style/10315/koolbin">KoolBin</a> userstyle.</i>
+</p>
+
+<p align="center">
+<i>IDKraftBin is a customized version of <a href="https://userstyles.world/user/NeighborlyFedora">NeighborlyFedora</a>'s  <a href="https://userstyles.world/style/10478/idkbin">Idkbin</a> style.*</i>
+    <br>
+  <i>*Make sure to turn off "Thumbnails on left" option if you are using the original Idkbin userstyle from NeighborlyFedora.</i>
 </p>
