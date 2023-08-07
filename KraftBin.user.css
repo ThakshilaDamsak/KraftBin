@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      2.3.3
+@version      2.3.4
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -119,7 +119,8 @@ url-prefix("https://fedia.io") {
 	.radiogroup .thumb-subject,
 	.switch,
 	.enum,
-	.options {
+	.options,
+	iframe {
 		border-radius: var(--kraftbinBorderRadius) !important;
 		box-shadow: var(--KraftBin-shadow) !important;
 	}
