@@ -18,7 +18,7 @@ KraftBin
  </p>
 
 ### v2.3.1
-- Added ability to change corner radius.
+- Added ability to change corner radius. (Needs to disable "Rounded Edges" setting on Kbin)
 - Added ability to enable or disable top margin.
 - Few more tweaks and fixes.
 
