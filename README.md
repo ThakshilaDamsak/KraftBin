@@ -57,7 +57,7 @@ Screenshots
 #
 
 <p align="center">
-<i><a href="#kraftbin">KraftBin</a> is Derived from <a href="https://userstyles.world/user/Randdose">Randdose</a>'s <a href="https://userstyles.world/style/10315/koolbin">KoolBin</a> userstyle.</i>
+<i><a href="#kraftbin">KraftBin</a> is derived from <a href="https://userstyles.world/user/Randdose">Randdose</a>'s <a href="https://userstyles.world/style/10315/koolbin">KoolBin</a> userstyle.</i>
 </p>
 
 <p align="center">
