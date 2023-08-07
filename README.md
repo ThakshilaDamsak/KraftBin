@@ -48,11 +48,11 @@ Screenshots
 #
 
 <p align="center">
-<i>KraftBin is Derived from <a href="https://userstyles.world/user/Randdose">Randdose</a>'s <a href="https://userstyles.world/style/10315/koolbin">KoolBin</a> userstyle.</i>
+<i><a href="#kraftbin">KraftBin</a> is Derived from <a href="https://userstyles.world/user/Randdose">Randdose</a>'s <a href="https://userstyles.world/style/10315/koolbin">KoolBin</a> userstyle.</i>
 </p>
 
 <p align="center">
-<i>IDKraftBin is a customized version of <a href="https://userstyles.world/user/NeighborlyFedora">NeighborlyFedora</a>'s  <a href="https://userstyles.world/style/10478/idkbin">Idkbin</a> style.*</i>
+<i><a href="#idkraftbin">IDKraftBin</a> is a customized version of <a href="https://userstyles.world/user/NeighborlyFedora">NeighborlyFedora</a>'s  <a href="https://userstyles.world/style/10478/idkbin">Idkbin</a> style.*</i>
     <br>
   <i>*Make sure to turn off "Thumbnails on left" option if you are using the original Idkbin userstyle from NeighborlyFedora.</i>
 </p>
