@@ -9,9 +9,9 @@
 @license      GPL v3
 @preprocessor default
 
-@var text kraftbinBorderRadius "Border Radius —— Turn off `Rounded Edges` option in Kbin to make this work" "8px"
+@var text kraftbinBorderRadius "Corner Radius —— Turn off `Rounded Edges` option in Kbin to make this work" "8px"
 
-@var select containerMarginTop "Margin Top" {
+@var select containerMarginTop "Top Margin" {
  "Enabled": "10px",
  "Disabled": "0",
   }
