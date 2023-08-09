@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      2.3.7
+@version      2.3.8
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -71,16 +71,17 @@
   }
 
 @var select marginsToggle "Margins on Sides —— For large screens" {
+ "Disabled": "none",
  "Default": "5%",
  "Large": "10%",
  "Larger": "15%",
  "Custom": "var(--marginsToggle-custom, none)",
- "Disabled": "none",
   }
 
 @var text marginsToggle-custom "Custom Side Margin Size" "10%"
 
 @var select containerMaxwidth "Website Maximum Width —— For large screens" {
+ "Default": "1200px",
  "Kbin Default": "1360px",
  "Reddit-like": "1000px",
  "Full Width": "auto",
