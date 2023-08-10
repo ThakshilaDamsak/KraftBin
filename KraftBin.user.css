@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      2.3.8
+@version      2.3.9
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -198,6 +198,10 @@ url-prefix("https://fedia.io") {
 	.kbin-container {
 		transition: 0.2s;
 		max-width: var(--containerMaxwidth);
+	}
+	
+	.pagination a, .pagination span {
+		border-radius: var(--kraftbinBorderRadius) ;
 	}
 
 	/*Headerbar*/
