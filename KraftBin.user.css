@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      2.3.11
+@version      2.3.12
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -321,7 +321,7 @@ url-prefix("https://karab.in"),
 url-prefix("https://fedia.io") {
 	/*Posts*/
 	.entry {
-		grid-template-areas: "vote title title" "vote image image" "vote image image" "vote desc desc  " "vote meta footer" "vote body  body ";
+		grid-template-areas: "vote title title" "vote image image" "vote image image" "vote desc desc  "  "vote body  body " "vote meta footer";
 		padding: 5px;
 		border-radius: var(--kraftbinBorderRadius) !important;
 		box-shadow: var(--KraftBin-shadow) !important;
