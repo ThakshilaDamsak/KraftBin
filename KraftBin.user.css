@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      2.3.12
+@version      2.3.13
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -177,7 +177,7 @@ url-prefix("https://fedia.io") {
 
 	@media screen and (max-width: 760px) {
 		.entry footer {
-			grid-area: desc;
+			grid-area: body;
 		}
 	}
 
