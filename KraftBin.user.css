@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      3.1.1
+@version      3.1.2
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -63,7 +63,7 @@
   }
 
 @var select kbinPromo-display "Kbin Promotion" {
- "Show": "block",
+ "Show": "flex",
  "Hide": "none",
   }
 
@@ -294,6 +294,7 @@ url-prefix("https://fedia.io") {
 	.kbin-promo {
 		box-shadow: none !important;
 		display: var(--kbinPromo-display) !important;
+		flex-direction:row !important;
 	}
 
 	.section--no-bg {
