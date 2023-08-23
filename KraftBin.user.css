@@ -1,13 +1,15 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      2.3.15
+@version      3.1.1
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
 @homepageURL  https://github.com/ThakshilaDamsak/KraftBin
 @supportURL   https://github.com/ThakshilaDamsak/KraftBin/issues/new
 @license      GPL v3
-@preprocessor default
+@preprocessor stylus
+
+@var checkbox customLayout "KraftBin Layout" 1
 
 @var text kraftbinBorderRadius "Corner Radius —— Turn off `Rounded Edges` option in Kbin to make this work" "8px"
 
@@ -16,7 +18,7 @@
  "Disabled": "0",
   }
 
-@var select KraftBin-shadow "Extra Shadows" {
+@var select kraftBin-shadow "Extra Shadows" {
  "Enabled": "0px 5px 25px 0px rgba(0, 0, 0, .11)",
  "Disabled": "none",
   }
@@ -70,17 +72,7 @@
  "Hide": "0%",
   }
 
-@var select marginsToggle "Margins on Sides —— For large screens" {
- "Disabled": "none",
- "Default": "5%",
- "Large": "10%",
- "Larger": "15%",
- "Custom": "var(--marginsToggle-custom, none)",
-  }
-
-@var text marginsToggle-custom "Custom Side Margin Size" "10%"
-
-@var select containerMaxwidth "Website Maximum Width —— For large screens" {
+@var select containerMaxwidth "Content Maximum Width —— For large screens" {
  "Default": "1200px",
  "Kbin Default": "1360px",
  "Reddit-like": "1000px",
@@ -90,10 +82,39 @@
 
 @var text containerMaxwidth-custom "Custom Maximum Width" "1500px"
 
+@var select headerMaxwidth "Header Maximum Width —— For large screens" {
+ "Full Width": "auto",
+ "Same as Content": "containerMaxwidth",
+ "Kbin Default": "1360px",
+ "Custom": "var(--headerMaxwidth-custom, none)",
+  }
+
+@var text headerMaxwidth-custom "Header Custom Maximum Width" "1500px"
+
 ==/UserStyle== */
 @-moz-document url-prefix("https://kbin.social"),
 url-prefix("https://karab.in"),
 url-prefix("https://fedia.io") {
+
+	:root {
+		--kraftbinBorderRadius: kraftbinBorderRadius;
+		--containerMarginTop: containerMarginTop;
+		--KraftBin-shadow: kraftBin-shadow;
+		--alertToggle: alertToggle;
+		--sidebarToggle: sidebarToggle;
+		--containerRatio-sidebar: containerRatio-sidebar;
+		--containerRatio-sidebar-custom: containerRatio-sidebar-custom;
+		--magazinesToggle: magazinesToggle;
+		--activeUsersToggle: activeUsersToggle;
+		--randomPostsToggle: randomPostsToggle;
+		--randomThreadsToggle: randomThreadsToggle;
+		--kbinPromo-display: kbinPromo-display;
+		--scrolltopToggle: scrolltopToggle;
+		--containerMaxwidth: containerMaxwidth;
+		--containerMaxwidth-custom: containerMaxwidth-custom;
+		--headerMaxwidth: headerMaxwidth;
+	}
+
 	/*Page*/
 	html {
 		scroll-behavior: smooth;
@@ -197,15 +218,16 @@ url-prefix("https://fedia.io") {
 		justify-content: center;
 		padding-top: var(--containerMarginTop) !important;
 		transition: 0.2s;
+		max-width: var(--containerMaxwidth);
+	}
+
+	#header .kbin-container {
+		max-width: var(--headerMaxwidth);
+		transition: 0.2s;
 	}
 
 	.cover {
 		border-radius: var(--kraftbinBorderRadius) var(--kraftbinBorderRadius) 0 0 !important;
-	}
-
-	.kbin-container {
-		transition: 0.2s;
-		max-width: var(--containerMaxwidth);
 	}
 
 	.pagination a,
@@ -319,81 +341,120 @@ url-prefix("https://fedia.io") {
 @-moz-document url-prefix("https://kbin.social"),
 url-prefix("https://karab.in"),
 url-prefix("https://fedia.io") {
+
+	if(customLayout) {
+		/*Posts*/
+		.entry {
+			grid-template-areas: "vote title title" "vote image image" "vote image image" "vote desc desc  " "vote meta footer" "vote body  body ";
+			padding: 5px;
+			border-radius: var(--kraftbinBorderRadius) !important;
+			box-shadow: var(--KraftBin-shadow) !important;
+			transition: 0.2s;
+		}
+
+		.no-image-placeholder {
+			display: none;
+		}
+
+		/*Post image wrapper*/
+		.entry figure {
+			display: flex;
+			justify-content: center;
+			width: unset;
+			height: unset;
+			position: unset;
+			margin: unset;
+		}
+
+		/*Post Image*/
+		.entry .no-image-placeholder img,
+		.entry figure img {
+			max-height: 400px;
+			object-fit: unset;
+			position: unset;
+			height: unset;
+			border-radius: var(--kraftbinBorderRadius) !important;
+		}
+
+		.entry .no-image-placeholder,
+		.entry figure {
+			justify-self: center;
+			border-radius: var(--kraftbinBorderRadius) !important;
+			margin: 10px;
+		}
+
+		.entry .no-image-placeholder .image-filler,
+		.entry figure .image-filler {
+			width: unset;
+			height: unset;
+			background-position: unset;
+			top: unset;
+			left: unset;
+			right: unset;
+		}
+
+		/*Placeholder for posts with no image*/
+		.entry .no-image-placeholder {
+			width: 200px;
+			height: 200px;
+		}
+
+		/*User and magazine info*/
+		.entry .meta {
+			width: max-content;
+			align-self: unset;
+			margin: 10px;
+			margin-left: 10px;
+			grid-area: footer;
+		}
+
+		/*Short description*/
+		.entry .short-desc {
+			grid-area: desc;
+		}
+
+		/*Contains options like: comments, boost, report, etc*/
+		.entry footer {
+			margin: auto;
+			margin-right: 20px;
+			transition: 0.2s;
+		}
+
+		.preview img {
+			box-shadow: var(--KraftBin-shadow) !important;
+			transition: 0.2s;
+		}
+
+		.kch_header {
+			border-radius: var(--kraftbinBorderRadius) var(--kraftbinBorderRadius) 0 0 !important;
+		}
+
+		.language-vbnet {
+			border-radius: 0 0 var(--kraftbinBorderRadius) var(--kraftbinBorderRadius) !important;
+		}
+
+		aside.vote {
+			border-radius: var(--kraftbinBorderRadius) 0 0 var(--kraftbinBorderRadius) !important;
+		}
+	}
+
 	/*Posts*/
 	.entry {
-		grid-template-areas: "vote title title" "vote image image" "vote image image" "vote desc desc  " "vote meta footer" "vote body  body ";
-		padding: 5px;
 		border-radius: var(--kraftbinBorderRadius) !important;
 		box-shadow: var(--KraftBin-shadow) !important;
 		transition: 0.2s;
 	}
 
-	.no-image-placeholder {
-		display: none;
-	}
-
-	/*Post image wrapper*/
-	.entry figure {
-		display: flex;
-		justify-content: center;
-		width: unset;
-		height: unset;
-		position: unset;
-		margin: unset;
-	}
 
 	/*Post Image*/
 	.entry .no-image-placeholder img,
 	.entry figure img {
-		max-height: 400px;
-		object-fit: unset;
-		position: unset;
-		height: unset;
 		border-radius: var(--kraftbinBorderRadius) !important;
 	}
 
 	.entry .no-image-placeholder,
 	.entry figure {
-		justify-self: center;
 		border-radius: var(--kraftbinBorderRadius) !important;
-		margin: 10px;
-	}
-
-	.entry .no-image-placeholder .image-filler,
-	.entry figure .image-filler {
-		width: unset;
-		height: unset;
-		background-position: unset;
-		top: unset;
-		left: unset;
-		right: unset;
-	}
-
-	/*Placeholder for posts with no image*/
-	.entry .no-image-placeholder {
-		width: 200px;
-		height: 200px;
-	}
-
-	/*User and magazine info*/
-	.entry .meta {
-		width: max-content;
-		align-self: unset;
-		margin: 10px;
-		margin-left: 10px;
-		grid-area: footer;
-	}
-
-	/*Short description*/
-	.entry .short-desc {
-		grid-area: desc;
-	}
-
-	/*Contains options like: comments, boost, report, etc*/
-	.entry footer {
-		margin: auto;
-		margin-right: 20px;
-		transition: 0.2s;
 	}
 
 	.preview img {
@@ -426,7 +487,7 @@ url-prefix("https://fedia.io") {
 		background: #81818114;
 		margin: 0px !important;
 		border: 1px;
-		border-radius: var(--kraftbinBorderRadius) 0 0 var(--kraftbinBorderRadius) !important;
+		border-radius: var(--kraftbinBorderRadius) !important;
 	}
 
 	/*Vote buttons*/
