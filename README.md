@@ -17,6 +17,10 @@ KraftBin
 <img src="https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/d188cd6a-babb-4eb6-91a4-9ce02c6c6d36" alt="Settings" />
  </p>
 
+### v3.1.1
+- Added ability to enable or disable custom post layout.
+- Changed Preprocessor to Stylus.
+
 ### v2.3.1
 - Added ability to change corner radius. (Needs to disable "Rounded Edges" setting on Kbin)
 - Added ability to enable or disable top margin.
