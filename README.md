@@ -67,5 +67,5 @@ Screenshots
 <p align="center">
 <i><a href="#idkraftbin">IDKraftBin</a> is a customized version of <a href="https://userstyles.world/user/NeighborlyFedora">NeighborlyFedora</a>'s  <a href="https://userstyles.world/style/10478/idkbin">Idkbin</a> style.*</i>
     <br>
-  <i>*Make sure to turn off "Thumbnails on left" option if you are using the original Idkbin userstyle from NeighborlyFedora.</i>
+  <i>*Make sure to turn off "Thumbnails on left" option if you are using NeighborlyFedora's original Idkbin userstyle with KraftBin Layout enabled.</i>
 </p>
