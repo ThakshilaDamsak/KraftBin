@@ -31,7 +31,7 @@ IDKraftBin
 </h2>
  
 <p align="center">
-<b>You can combine this userstyle with my <a href="https://github.com/ThakshilaDamsak/IDKraftBin/#readme">IDKraftBin</a> userstyle for a more modern look and better accessibility.</b>
+<b>You can combine this userstyle with <a href="https://github.com/ThakshilaDamsak/IDKraftBin/#readme">IDKraftBin</a> userstyle for a more modern look and better accessibility.</b>
   <br>
 </p>
 <p align="center">
