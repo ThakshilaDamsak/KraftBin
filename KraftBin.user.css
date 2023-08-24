@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      3.1.3
+@version      3.5.1
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -11,6 +11,8 @@
 
 @var checkbox customLayout "KraftBin Post Layout" 1
 
+@var checkbox reduceMotion "Reduce Extra Motion" 0
+
 @var text kraftbinBorderRadius "Corner Radius —— Turn off `Rounded Edges` option in Kbin to make this work" "8px"
 
 @var select containerMarginTop "Top Margin" {
@@ -18,10 +20,7 @@
  "Disabled": "0",
   }
 
-@var select kraftBin-shadow "Extra Shadows" {
- "Enabled": "0px 5px 25px 0px rgba(0, 0, 0, .11)",
- "Disabled": "none",
-  }
+@var checkbox kraftBin-shadow "Extra Shadows" 1
 
 @var select alertToggle "Federated Warnings" {
  "Enabled": "block",
@@ -42,25 +41,13 @@
 
 @var text containerRatio-sidebar-custom "Custom Sidebar Size" "650px"
 
-@var select magazinesToggle "Random Magazines" {
- "Show": "block",
- "Hide": "none",
-  }
+@var checkbox magazinesToggle "Random Magazines" 1
 
-@var select activeUsersToggle "Active Users" {
- "Show": "block",
- "Hide": "none",
-  }
+@var checkbox activeUsersToggle "Active Users" 1
 
-@var select randomPostsToggle "Random Posts" {
- "Show": "block",
- "Hide": "none",
-  }
+@var checkbox randomPostsToggle "Random Posts" 1
 
-@var select randomThreadsToggle "Random Threads" {
- "Show": "block",
- "Hide": "none",
-  }
+@var checkbox randomThreadsToggle "Random Threads" 1
 
 @var select kbinPromo-display "Kbin Promotion" {
  "Show": "flex",
@@ -99,20 +86,59 @@ url-prefix("https://fedia.io") {
 	:root {
 		--kraftbinBorderRadius: kraftbinBorderRadius;
 		--containerMarginTop: containerMarginTop;
-		--KraftBin-shadow: kraftBin-shadow;
-		--alertToggle: alertToggle;
-		--sidebarToggle: sidebarToggle;
+		--KraftBin-shadow: none;
+		--KraftBin-hover-shadow: none;
+		--alertToggle: block;
+		--sidebarToggle: block;
 		--containerRatio-sidebar: containerRatio-sidebar;
 		--containerRatio-sidebar-custom: containerRatio-sidebar-custom;
-		--magazinesToggle: magazinesToggle;
-		--activeUsersToggle: activeUsersToggle;
-		--randomPostsToggle: randomPostsToggle;
-		--randomThreadsToggle: randomThreadsToggle;
+		--magazinesToggle: block;
+		--activeUsersToggle: block;
+		--randomPostsToggle: block;
+		--randomThreadsToggle: block;
 		--kbinPromo-display: kbinPromo-display;
 		--scrolltopToggle: scrolltopToggle;
 		--containerMaxwidth: containerMaxwidth;
 		--containerMaxwidth-custom: containerMaxwidth-custom;
 		--headerMaxwidth: headerMaxwidth;
+	}
+
+	if (kraftBin-shadow) {
+		:root {
+			--KraftBin-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .11);
+			--KraftBin-hover-shadow: 0px 1px 25px 0px rgba(0, 0, 0, .06);
+		}
+	}
+	
+	if not (alertToggle) {
+		:root {
+				--alertToggle: none;
+		}
+	}
+		if not (sidebarToggle) {
+		:root {
+				--sidebarToggle: none;
+		}
+	}
+		if not (magazinesToggle) {
+		:root {
+				--magazinesToggle: none;
+		}
+	}
+		if not (activeUsersToggle) {
+		:root {
+				--activeUsersToggle: none;
+		}
+	}
+		if not (randomPostsToggle) {
+		:root {
+				--randomPostsToggle: none;
+		}
+	}
+		if not (randomThreadsToggle) {
+		:root {
+				--randomThreadsToggle: none;
+		}
 	}
 
 	/*Page*/
@@ -128,6 +154,7 @@ url-prefix("https://fedia.io") {
 	img {
 		box-shadow: var(--KraftBin-shadow) !important;
 		border-radius: var(--kraftbinBorderRadius) !important;
+		transition: 0.2s;
 	}
 
 	code,
@@ -172,6 +199,34 @@ url-prefix("https://fedia.io") {
 		box-shadow: none !important;
 		border-radius: 0 !important;
 	}
+
+	article figure {
+		transition: 0.2s ease-in;
+		box-shadow: var(--KraftBin-shadow);
+	}
+
+	article figure a {
+		margin-bottom: -6px;
+	}
+
+	if not (reduceMotion) {
+		article figure img:hover {
+			scale: 1.015;
+		}
+
+		article figure:hover {
+			box-shadow: var(--KraftBin-hover-shadow);
+		}
+
+		.preview img:hover {
+			scale: 1.009;
+		}
+
+		a:hover {
+			--KraftBin-shadow: var(--KraftBin-hover-shadow);
+		}
+	}
+
 
 	#scroll-top {
 		box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, .26);
@@ -294,7 +349,7 @@ url-prefix("https://fedia.io") {
 	.kbin-promo {
 		box-shadow: none !important;
 		display: var(--kbinPromo-display) !important;
-		flex-direction:row !important;
+		flex-direction: row !important;
 	}
 
 	.section--no-bg {
@@ -422,8 +477,7 @@ url-prefix("https://fedia.io") {
 		}
 
 		.preview img {
-			box-shadow: var(--KraftBin-shadow) !important;
-			transition: 0.2s;
+			transition: 0.2s ease;
 		}
 
 		.kch_header {
@@ -446,6 +500,11 @@ url-prefix("https://fedia.io") {
 		transition: 0.2s;
 	}
 
+	.entry:hover {
+		box-shadow: var(--KraftBin-hover-shadow) !important;
+		transition: 0.1s !important;
+	}
+
 
 	/*Post Image*/
 	.entry .no-image-placeholder img,
@@ -458,9 +517,22 @@ url-prefix("https://fedia.io") {
 		border-radius: var(--kraftbinBorderRadius) !important;
 	}
 
-	.preview img {
+	.preview {
 		box-shadow: var(--KraftBin-shadow) !important;
 		transition: 0.2s;
+		overflow: hidden !important;
+		border-radius: var(--kraftbinBorderRadius) !important;
+		margin-bottom: 5px;
+	}
+
+	.preview:hover {
+		box-shadow: var(--KraftBin-hover-shadow) !important;
+	}
+
+	.preview img {
+		transition: 0.2s;
+		margin-bottom: -7px;
+					box-shadow: none !important;
 	}
 
 	.kch_header {
