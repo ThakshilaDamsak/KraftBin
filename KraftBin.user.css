@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      3.5.3
+@version      3.5.4
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -109,35 +109,35 @@ url-prefix("https://fedia.io") {
 			--KraftBin-hover-shadow: 0px 1px 25px 0px rgba(0, 0, 0, .06);
 		}
 	}
-	
+
 	if not (alertToggle) {
 		:root {
-				--alertToggle: none;
+			--alertToggle: none;
 		}
 	}
-		if not (sidebarToggle) {
+	if not (sidebarToggle) {
 		:root {
-				--sidebarToggle: none;
+			--sidebarToggle: none;
 		}
 	}
-		if not (magazinesToggle) {
+	if not (magazinesToggle) {
 		:root {
-				--magazinesToggle: none;
+			--magazinesToggle: none;
 		}
 	}
-		if not (activeUsersToggle) {
+	if not (activeUsersToggle) {
 		:root {
-				--activeUsersToggle: none;
+			--activeUsersToggle: none;
 		}
 	}
-		if not (randomPostsToggle) {
+	if not (randomPostsToggle) {
 		:root {
-				--randomPostsToggle: none;
+			--randomPostsToggle: none;
 		}
 	}
-		if not (randomThreadsToggle) {
+	if not (randomThreadsToggle) {
 		:root {
-				--randomThreadsToggle: none;
+			--randomThreadsToggle: none;
 		}
 	}
 
@@ -217,10 +217,10 @@ url-prefix("https://fedia.io") {
 		article figure:hover {
 			box-shadow: var(--KraftBin-hover-shadow);
 		}
-		
-		a img.thumb-subject:hover {
-			box-shadow: var(--KraftBin-hover-shadow);
-						scale: 1.015;
+
+		img.thumb-subject:hover {
+			box-shadow: var(--KraftBin-hover-shadow) !important;
+			scale: 1.015;
 		}
 
 		.preview img:hover {
@@ -228,11 +228,12 @@ url-prefix("https://fedia.io") {
 		}
 
 		a:hover {
-			:root{
-				--KraftBin-shadow: var(--KraftBin-hover-shadow);}
+			:root {
+				--KraftBin-shadow: var(--KraftBin-hover-shadow);
+			}
 		}
 	}
-	
+
 
 
 	#scroll-top {
@@ -349,7 +350,7 @@ url-prefix("https://fedia.io") {
 		transition: 0.2s;
 	}
 
-	.thumb-subject {
+	img.thumb-subject {
 		box-shadow: var(--KraftBin-shadow) !important;
 	}
 
@@ -539,7 +540,7 @@ url-prefix("https://fedia.io") {
 	.preview img {
 		transition: 0.2s;
 		margin-bottom: -7px;
-					box-shadow: none !important;
+		box-shadow: none !important;
 	}
 
 	.kch_header {
