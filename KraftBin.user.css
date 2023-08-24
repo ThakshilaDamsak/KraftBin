@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      3.5.7
+@version      3.5.8
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -95,6 +95,7 @@ url-prefix("https://fedia.io") {
 		--containerMaxwidth: containerMaxwidth;
 		--containerMaxwidth-custom: containerMaxwidth-custom;
 		--headerMaxwidth: headerMaxwidth;
+		--headerMaxwidth-custom: headerMaxwidth-custom;
 	}
 
 	if (kraftBin-shadow) {
