@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      3.5.8
+@version      3.5.9
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -100,8 +100,9 @@ url-prefix("https://fedia.io") {
 
 	if (kraftBin-shadow) {
 		:root {
-			--KraftBin-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .11);
-			--KraftBin-hover-shadow: 0px 1px 25px 0px rgba(0, 0, 0, .06);
+			--KraftBin-shadow: 0px 5px 25px rgba(0, 0, 0, .11);
+			--KraftBin-hover-shadow: 0px 1px 25px rgba(0, 0, 0, .06);
+			--KraftBin-image-shadow: 0 0 15px rgba(0, 0, 0, .17);
 		}
 	}
 
@@ -147,9 +148,9 @@ url-prefix("https://fedia.io") {
 	}
 
 	img {
-		box-shadow: var(--KraftBin-shadow) !important;
-		border-radius: var(--kraftbinBorderRadius) !important;
+		filter: drop-shadow(var(--KraftBin-image-shadow));
 		transition: 0.2s;
+		border-radius: var(--kraftbinBorderRadius);
 	}
 
 	code,
@@ -160,7 +161,7 @@ url-prefix("https://fedia.io") {
 	.theme,
 	.slider,
 	.font-size,
-	.radiogroup .thumb-subject,
+	.radiogroup,
 	.switch,
 	.enum,
 	.options,
@@ -223,9 +224,7 @@ url-prefix("https://fedia.io") {
 		}
 
 		a:hover {
-			:root {
 				--KraftBin-shadow: var(--KraftBin-hover-shadow);
-			}
 		}
 	}
 
@@ -343,10 +342,6 @@ url-prefix("https://fedia.io") {
 		display: var(--sidebarToggle);
 		width: var(--containerRatio-sidebar);
 		transition: 0.2s;
-	}
-
-	img.thumb-subject {
-		box-shadow: var(--KraftBin-shadow) !important;
 	}
 
 	.kbin-promo {
@@ -512,7 +507,7 @@ url-prefix("https://fedia.io") {
 	/*Post Image*/
 	.entry .no-image-placeholder img,
 	.entry figure img {
-		border-radius: var(--kraftbinBorderRadius) !important;
+		border-radius: var(--kraftbinBorderRadius);
 	}
 
 	.entry .no-image-placeholder,
@@ -521,7 +516,6 @@ url-prefix("https://fedia.io") {
 	}
 
 	div.preview {
-		box-shadow: var(--KraftBin-shadow) !important;
 		transition: 0.2s;
 		overflow: hidden !important;
 		border-radius: var(--kraftbinBorderRadius) !important;
@@ -616,8 +610,6 @@ url-prefix("https://fedia.io") {
 	/*Magazine*/
 	#sidebar .section figure img {
 		aspect-ratio: auto;
-		border-radius: 0 var(--kraftbinBorderRadius);
-		box-shadow: var(--KraftBin-shadow) !important;
 	}
 
 	.btn[title="block_magazine"],
