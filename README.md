@@ -51,14 +51,36 @@ Screenshots
 </h2>
 
 <details>
-  <summary align="center"><b>Click to see.</b></summary>
-
+  <summary align="center"><b>Magazine - @lemmyworld@lemmy.world</b></summary>
+    
 ![Screenshot 2023-08-06 at 17-50-27 lemmyworld - kbin social](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/69a3a4c6-48b5-4027-b343-1548d59528e2)
+
+</details>
+    
+<details>
+  <summary align="center"><b>Treads</b></summary>
+    
 ![Screenshot 2023-08-06 at 17-39-45 kbin social - Explore Fediverse](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/4f3f3920-44a4-4862-ae8c-6fe03f39c188)
+
+</details>
+
+<details>
+      <summary align="center"><b>Magazine - @unixporn@lemmy.ml</b></summary>
+
 ![Screenshot 2023-08-06 at 17-42-25 unixporn - kbin social](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/33db18d8-6ae0-44e8-b441-131d547eb324)
+
+</details>
+
+<details>
+      <summary align="center"><b>Search</b></summary>
+
 ![Screenshot 2023-08-06 at 17-52-00 Search - kbin social](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/9ae12be3-3bff-4857-bc2d-c765242dba9f)
 
-#### Compact Mode
+</details>
+
+<details>
+      <summary align="center"><b>Compact Mode</b></summary>
+    
 ![Screenshot_20230806_175317](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/b6177c5b-a215-4149-95ec-bf767a13582c)
 
 </details>
