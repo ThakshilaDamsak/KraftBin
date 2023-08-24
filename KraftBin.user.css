@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      3.5.5
+@version      3.5.6
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -56,7 +56,7 @@
  "Hide": "0%",
   }
 
-@var select containerMaxwidth "Content Maximum Width —— For large screens" {
+@var select containerMaxwidth "Content Max Width —— For large screens" {
  "Default": "1200px",
  "Kbin Default": "1360px",
  "Reddit-like": "1000px",
@@ -64,16 +64,16 @@
  "Custom": "var(--containerMaxwidth-custom, none)",
   }
 
-@var text containerMaxwidth-custom "Custom Maximum Width" "1500px"
+@var text containerMaxwidth-custom "Custom Max Width" "1500px"
 
-@var select headerMaxwidth "Header Maximum Width —— For large screens" {
+@var select headerMaxwidth "Header Max Width —— For large screens" {
  "Full Width": "auto",
  "Same as Content": "containerMaxwidth",
  "Kbin Default": "1360px",
  "Custom": "var(--headerMaxwidth-custom, none)",
   }
 
-@var text headerMaxwidth-custom "Header Custom Maximum Width" "1500px"
+@var text headerMaxwidth-custom "Header Custom Max Width" "1500px"
 
 ==/UserStyle== */
 @-moz-document url-prefix("https://kbin.social"),
