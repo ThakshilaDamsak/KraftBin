@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      3.5.4
+@version      3.5.5
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -27,10 +27,7 @@
  "Disabled": "none",
   }
 
-@var select sidebarToggle "Sidebar" {
- "Show": "block",
- "Hide": "none",
-  }
+@var checkbox sidebarToggle "Sidebar" 1
 
 @var select containerRatio-sidebar "Sidebar Size" {
  "Small": "350px",
