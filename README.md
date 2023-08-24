@@ -18,8 +18,8 @@ KraftBin
  </p>
 
 ### v3.5.1
-- Added some animations.
-- Added ability to reduce extra animations.
+- Added some shadows and animations.
+- Added ability to reduce extra motion.
 - Converted some selections to checkboxes.
 
 ### v3.1.1
