@@ -17,34 +17,21 @@ KraftBin
 <img src="https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/4cfe07cc-de52-4ec3-a69f-1dbaf426715e" alt="Settings" />
  </p>
 
-### v3.5.1
-- Added some shadows and animations.
-- Added ability to reduce extra motion.
-- Converted some selections to checkboxes.
-
-### v3.1.1
-- Added ability to enable or disable custom post layout.
-- Changed Preprocessor to Stylus.
-
-### v2.3.1
-- Added ability to change corner radius. (Needs to disable "Rounded Edges" setting on Kbin)
-- Added ability to enable or disable top margin.
-- Few more tweaks and fixes.
-
 <h2 align="center">
-IDKraftBin
+Features
 </h2>
- 
-<p align="center">
-<b>You can combine this userstyle with <a href="https://github.com/ThakshilaDamsak/IDKraftBin/#readme">IDKraftBin</a> userstyle for a more modern look and better accessibility.</b>
-  <br>
-</p>
-<p align="center">
 
-<a href="https://github.com/ThakshilaDamsak/IDKraftBin/#readme">
-    <img alt="Install IDKraftBin" src="https://img.shields.io/badge/Install-IDKraftBin-00adad.svg"/>
-  </a>
-  </p>
+- **Reddit-like Post Layout** (Can be disabled)
+- **Shadows and animations.** (Both can be disabled individually)
+- **Custom Corner Radius.** (Need to disable "Round Edges" option in Kbin settings for this to work)
+- **Ability to disable Federated Warnings.**
+- **Ability to hide Sidebar.**
+- **Ability to change Sidebar Size.**
+- **Ability to hide sidebar elements individually.**
+  (Random Magazines, Active Users, Random Posts, Random Threads, Kbin Promotion)
+- **Ability to hide Scroll-to-top button.**
+- **Customizable Content Max Width.**
+- **Customizable Header Max Width.**
 
 <h2 align="center">
 Screenshots
@@ -84,6 +71,43 @@ Screenshots
 ![Screenshot_20230806_175317](https://github.com/ThakshilaDamsak/KraftBin/assets/95128171/b6177c5b-a215-4149-95ec-bf767a13582c)
 
 </details>
+
+#
+
+<details>
+    <summary> Changelog </summary>
+    
+### v3.5.1
+- Added some shadows and animations.
+- Added ability to reduce extra motion.
+- Converted some selections to checkboxes.
+
+### v3.1.1
+- Added ability to enable or disable custom post layout.
+- Changed Preprocessor to Stylus.
+
+### v2.3.1
+- Added ability to change corner radius. (Needs to disable "Rounded Edges" setting on Kbin)
+- Added ability to enable or disable top margin.
+- Few more tweaks and fixes.
+
+</details>
+
+
+<h2 align="center">
+IDKraftBin
+</h2>
+ 
+<p align="center">
+<b>You can combine this userstyle with <a href="https://github.com/ThakshilaDamsak/IDKraftBin/#readme">IDKraftBin</a> userstyle for a more modern look and better accessibility.</b>
+  <br>
+</p>
+<p align="center">
+
+<a href="https://github.com/ThakshilaDamsak/IDKraftBin/#readme">
+    <img alt="Install IDKraftBin" src="https://img.shields.io/badge/Install-IDKraftBin-00adad.svg"/>
+  </a>
+  </p>
 
 #
 
