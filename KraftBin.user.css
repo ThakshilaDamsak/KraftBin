@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      3.5.1
+@version      3.5.2
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -223,9 +223,11 @@ url-prefix("https://fedia.io") {
 		}
 
 		a:hover {
-			--KraftBin-shadow: var(--KraftBin-hover-shadow);
+			:root{
+				--KraftBin-shadow: var(--KraftBin-hover-shadow);}
 		}
 	}
+	
 
 
 	#scroll-top {
@@ -517,7 +519,7 @@ url-prefix("https://fedia.io") {
 		border-radius: var(--kraftbinBorderRadius) !important;
 	}
 
-	.preview {
+	div.preview {
 		box-shadow: var(--KraftBin-shadow) !important;
 		transition: 0.2s;
 		overflow: hidden !important;
