@@ -2,7 +2,7 @@
 KraftBin
 </h1>
 <h3 align="center">
-    Customizable, Cleaner and familiar look for Kbin.
+    Customizable, Cleaner and familiar look for <a href="https://kbin.pub/">Kbin</a>.
 </h3>
 <p align="center">
     <a href="https://userstyles.world/style/11353/kraftbin">
@@ -112,11 +112,11 @@ IDKraftBin
 #
 
 <p align="center">
-<i><a href="#kraftbin">KraftBin</a> is derived from <a href="https://userstyles.world/user/Randdose">Randdose</a>'s <a href="https://userstyles.world/style/10315/koolbin">KoolBin</a> userstyle.</i>
+<i><a href="./#kraftbin">KraftBin</a> is derived from <a href="https://userstyles.world/user/Randdose">Randdose</a>'s <a href="https://userstyles.world/style/10315/koolbin">KoolBin</a> userstyle.</i>
 </p>
 
 <p align="center">
-<i><a href="#idkraftbin">IDKraftBin</a> is a customized version of <a href="https://userstyles.world/user/NeighborlyFedora">NeighborlyFedora</a>'s  <a href="https://userstyles.world/style/10478/idkbin">Idkbin</a> style.*</i>
+<i><a href="./#idkraftbin">IDKraftBin</a> is a customized version of <a href="https://userstyles.world/user/NeighborlyFedora">NeighborlyFedora</a>'s  <a href="https://userstyles.world/style/10478/idkbin">Idkbin</a> style.*</i>
     <br>
   <i>*Make sure to turn off "Thumbnails on left" option if you are using NeighborlyFedora's original Idkbin userstyle with KraftBin Layout enabled.</i>
 </p>
