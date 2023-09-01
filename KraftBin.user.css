@@ -154,7 +154,7 @@ url-prefix("https://fedia.io") {
 	}
 
 	code,
-	div {
+	div :not(.content) {
 		border-radius: var(--kraftbinBorderRadius) !important;
 	}
 
