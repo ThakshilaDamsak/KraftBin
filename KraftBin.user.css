@@ -304,10 +304,10 @@ url-prefix("https://fedia.io") {
 		transition: 0.2s;
 	}
 
-	/*LOL*/
+	/*LOL
 	header#header.header a.active {
 		background: transparent;
-	}
+	} */
 
 	/*Drop down menus*/
 	#header menu .dropdown__menu {
