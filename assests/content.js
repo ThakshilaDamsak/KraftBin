@@ -32,7 +32,7 @@ Promise.all(imagePromises).then(() => {
   console.log('All images handled');
 
   // Fetch the content of the content HTML file
-  fetch('../README.md')
+  fetch('./README.md')
     .then(response => response.text())
     .then(html => {
       // Insert the content HTML into the container
