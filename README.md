@@ -77,6 +77,9 @@ Screenshots
 <details>
     <summary> Changelog </summary>
     
+### v3.6.1
+- Added a slider for corner radius adjustment.
+    
 ### v3.5.1
 - Added some shadows and animations.
 - Added ability to reduce extra motion.
