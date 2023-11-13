@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      3.8.2
+@version      3.8.3
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -58,7 +58,7 @@
   }
 
 @var select containerMaxwidth "Content Max Width —— For large screens" {
- "Default": "1200px",
+ "Default": "1250px",
  "Kbin Default": "1360px",
  "Reddit-like": "1000px",
  "Full Width": "auto",
@@ -156,7 +156,7 @@ url-prefix("https://fedia.io") {
 			--randomThreadsToggle: none;
 		}
 	}
-
+	
 	/*Page*/
 	html {
 		scroll-behavior: smooth;
