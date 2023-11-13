@@ -72,10 +72,15 @@ Screenshots
 
 </details>
 
-#
+<h2 align="center">
+Changelog
+</h2>
+
+### v3.8.1
+- Fixed bugs that happened due to the Kbin update.
 
 <details>
-    <summary> Changelog </summary>
+    <summary> Older versions </summary>
 
 ### v3.7.1
 - Improved shadow customization. I guess.
