@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      3.7.1
+@version      3.8.1
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -196,8 +196,6 @@ url-prefix("https://fedia.io") {
 
 	.slider::before {
 		border-radius: var(--kraftbinBorderRadius) !important;
-		left: .05em !important;
-		width: 1.4em !important;
 	}
 
 	.dropdown button,
@@ -478,12 +476,16 @@ url-prefix("https://fedia.io") {
 		}
 
 		/*User and magazine info*/
-		.entry .meta {
+		.entry:not(.entry-cross) .meta {
 			width: max-content;
 			align-self: unset;
 			margin: 10px;
 			margin-left: 10px;
 			grid-area: footer;
+		}
+		
+		.entry-cross {
+			margin-top:10px;
 		}
 
 		/*Short description*/
@@ -544,9 +546,6 @@ url-prefix("https://fedia.io") {
 		overflow: hidden !important;
 		border-radius: var(--kraftbinBorderRadius) !important;
 		margin-bottom: 5px;
-	}
-
-	.preview:hover {
 		box-shadow: var(--KraftBin-hover-shadow) !important;
 	}
 
@@ -637,17 +636,20 @@ url-prefix("https://fedia.io") {
 	}
 
 	.btn[title="block_magazine"],
-	aside.user__follow > form[name*="block"] .btn {
+	aside.user__follow > form[name*="block"] .btn,
+   .btn__secondary, aside.magazine__subscribe button,
+	aside.user__actions .btn__secondary{
 		border-radius: 0 var(--kraftbinBorderRadius) var(--kraftbinBorderRadius) 0 !important;
 	}
 
 	.magazine__subscribe div,
-	.user__follow div {
+	.user__follow div,
+ 	aside.user__actions div{
 		border-radius: var(--kraftbinBorderRadius) 0 0 var(--kraftbinBorderRadius) !important;
 	}
 
 	aside.magazine__subscribe > form[name*="subscribe"] .btn,
-	aside.user__follow > form[name*="follow"] .btn {
+	aside.user__actions > form[name*="user_follow"] .btn, {
 		border-radius: 0 !important;
 	}
 }
