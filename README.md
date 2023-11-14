@@ -76,11 +76,14 @@ Screenshots
 Changelog
 </h2>
 
-### v3.8.1
-- Fixed bugs that happened due to the Kbin update.
+### v3.9.1
+- More bug fixes and improvements.
 
 <details>
     <summary> Older versions </summary>
+
+### v3.8.1
+- Fixed bugs that happened due to the Kbin update.
 
 ### v3.7.1
 - Improved shadow customization. I guess.
