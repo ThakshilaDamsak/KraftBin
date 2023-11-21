@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      3.9.1
+@version      3.9.2
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -25,8 +25,6 @@
  "Large": "2",
  "Disabled": "0",
   }
-
-@var checkbox alertToggle "Federated Warnings" 1
 
 @var checkbox sidebarToggle "Sidebar" 1
 
@@ -126,11 +124,6 @@ url-prefix("https://fedia.io") {
 		}
 	}
 
-	if not (alertToggle) {
-		:root {
-			--alertToggle: none;
-		}
-	}
 	if not (sidebarToggle) {
 		:root {
 			--sidebarToggle: none;
@@ -158,10 +151,6 @@ url-prefix("https://fedia.io") {
 	}
 
 	/*Page*/
-	html {
-		scroll-behavior: smooth;
-	}
-
 	a,
 	p {
 		transition: 0.2s;
@@ -245,9 +234,11 @@ url-prefix("https://fedia.io") {
 		a:hover {
 			--KraftBin-shadow: var(--KraftBin-hover-shadow);
 		}
+
+		html {
+			scroll-behavior: smooth;
+		}
 	}
-
-
 
 	#scroll-top {
 		box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, .26);
@@ -778,58 +769,58 @@ url-prefix("https://fedia.io/magazines") {
 			border-radius: var(--kraftbinBorderRadius) !important;
 		}
 	}
-	
-	if (sidebarToggle) == 1 {
-			@media screen and (max-width:1248px) {
-				td .magazine__subscribe {
-			gap: 10px !important;
-		}
 
-		td .magazine__subscribe div,
-		td .magazine__subscribe form[name="magazine_subscribe"] .btn.active {
-			border-radius: var(--kraftbinBorderRadius) !important;
-		}
+	if (sidebarToggle)==1 {
+		@media screen and (max-width: 1248px) {
+			td .magazine__subscribe {
+				gap: 10px !important;
+			}
 
-		td .magazine__subscribe > form[name*="subscribe"] .btn {
-			border-radius: var(--kraftbinBorderRadius) !important;
-		}
+			td .magazine__subscribe div,
+			td .magazine__subscribe form[name="magazine_subscribe"] .btn.active {
+				border-radius: var(--kraftbinBorderRadius) !important;
+			}
 
-		.btn[title="block_magazine"],
-		td aside.user__follow > form[name*="block"] .btn,
-		.btn__secondary,
-		td aside.magazine__subscribe button,
-		td aside.user__actions .btn__secondary {
-			border-radius: var(--kraftbinBorderRadius) !important;
+			td .magazine__subscribe > form[name*="subscribe"] .btn {
+				border-radius: var(--kraftbinBorderRadius) !important;
+			}
+
+			.btn[title="block_magazine"],
+			td aside.user__follow > form[name*="block"] .btn,
+			.btn__secondary,
+			td aside.magazine__subscribe button,
+			td aside.user__actions .btn__secondary {
+				border-radius: var(--kraftbinBorderRadius) !important;
+			}
 		}
 	}
-	}
-	
-		if (sidebarToggle) == 0 {
-			@media screen and (max-width:898px) {
-				td .magazine__subscribe {
-			gap: 10px !important;
-		}
 
-		td .magazine__subscribe div,
-		td .magazine__subscribe form[name="magazine_subscribe"] .btn.active {
-			border-radius: var(--kraftbinBorderRadius) !important;
-		}
+	if (sidebarToggle)==0 {
+		@media screen and (max-width: 898px) {
+			td .magazine__subscribe {
+				gap: 10px !important;
+			}
 
-		td .magazine__subscribe > form[name*="subscribe"] .btn {
-			border-radius: var(--kraftbinBorderRadius) !important;
-		}
+			td .magazine__subscribe div,
+			td .magazine__subscribe form[name="magazine_subscribe"] .btn.active {
+				border-radius: var(--kraftbinBorderRadius) !important;
+			}
 
-		.btn[title="block_magazine"],
-		td aside.user__follow > form[name*="block"] .btn,
-		.btn__secondary,
-		td aside.magazine__subscribe button,
-		td aside.user__actions .btn__secondary {
-			border-radius: var(--kraftbinBorderRadius) !important;
+			td .magazine__subscribe > form[name*="subscribe"] .btn {
+				border-radius: var(--kraftbinBorderRadius) !important;
+			}
+
+			.btn[title="block_magazine"],
+			td aside.user__follow > form[name*="block"] .btn,
+			.btn__secondary,
+			td aside.magazine__subscribe button,
+			td aside.user__actions .btn__secondary {
+				border-radius: var(--kraftbinBorderRadius) !important;
+			}
 		}
 	}
-	}
-	
-		if not (containerRatio-sidebar) == 350px {
+
+	if not (containerRatio-sidebar)==350px {
 		td .magazine__subscribe {
 			gap: 10px !important;
 		}
