@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      3.10.1
+@version      3.10.2
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -729,122 +729,24 @@ url-prefix("https://fedia.io/magazines") {
 url-prefix("https://karab.in/magazines"),
 url-prefix("https://fedia.io/magazines") {
 
-	if (containerMaxwidth)==1000px var(--headerMaxwidth-custom, none) {
-		td .magazine__subscribe {
-			gap: 10px !important;
-		}
-
-		td .magazine__subscribe div,
-		td .magazine__subscribe form[name="magazine_subscribe"] .btn.active {
-			border-radius: var(--kraftbinBorderRadius) !important;
-		}
-
-		td .magazine__subscribe > form[name*="subscribe"] .btn {
-			border-radius: var(--kraftbinBorderRadius) !important;
-		}
-
-		.btn[title="block_magazine"],
-		td aside.user__follow > form[name*="block"] .btn,
-		.btn__secondary,
-		td aside.magazine__subscribe button,
-		td aside.user__actions .btn__secondary {
-			border-radius: var(--kraftbinBorderRadius) !important;
-		}
+	td .magazine__subscribe {
+		gap: 7px !important;
 	}
 
-	if (containerMaxwidth)==var(--headerMaxwidth-custom, none) {
-		td .magazine__subscribe {
-			gap: 10px !important;
-		}
-
-		td .magazine__subscribe div,
-		td .magazine__subscribe form[name="magazine_subscribe"] .btn.active {
-			border-radius: var(--kraftbinBorderRadius) !important;
-		}
-
-		td .magazine__subscribe > form[name*="subscribe"] .btn {
-			border-radius: var(--kraftbinBorderRadius) !important;
-		}
-
-		.btn[title="block_magazine"],
-		td aside.user__follow > form[name*="block"] .btn,
-		.btn__secondary,
-		td aside.magazine__subscribe button,
-		td aside.user__actions .btn__secondary {
-			border-radius: var(--kraftbinBorderRadius) !important;
-		}
+	td .magazine__subscribe div,
+	td .magazine__subscribe form[name="magazine_subscribe"] .btn.active {
+		border-radius: var(--kraftbinBorderRadius) !important;
 	}
 
-	if (sidebarToggle)==1 {
-		@media screen and (max-width: 1248px) {
-			td .magazine__subscribe {
-				gap: 10px !important;
-			}
-
-			td .magazine__subscribe div,
-			td .magazine__subscribe form[name="magazine_subscribe"] .btn.active {
-				border-radius: var(--kraftbinBorderRadius) !important;
-			}
-
-			td .magazine__subscribe > form[name*="subscribe"] .btn {
-				border-radius: var(--kraftbinBorderRadius) !important;
-			}
-
-			.btn[title="block_magazine"],
-			td aside.user__follow > form[name*="block"] .btn,
-			.btn__secondary,
-			td aside.magazine__subscribe button,
-			td aside.user__actions .btn__secondary {
-				border-radius: var(--kraftbinBorderRadius) !important;
-			}
-		}
+	td .magazine__subscribe > form[name*="subscribe"] .btn {
+		border-radius: var(--kraftbinBorderRadius) !important;
 	}
 
-	if (sidebarToggle)==0 {
-		@media screen and (max-width: 898px) {
-			td .magazine__subscribe {
-				gap: 10px !important;
-			}
-
-			td .magazine__subscribe div,
-			td .magazine__subscribe form[name="magazine_subscribe"] .btn.active {
-				border-radius: var(--kraftbinBorderRadius) !important;
-			}
-
-			td .magazine__subscribe > form[name*="subscribe"] .btn {
-				border-radius: var(--kraftbinBorderRadius) !important;
-			}
-
-			.btn[title="block_magazine"],
-			td aside.user__follow > form[name*="block"] .btn,
-			.btn__secondary,
-			td aside.magazine__subscribe button,
-			td aside.user__actions .btn__secondary {
-				border-radius: var(--kraftbinBorderRadius) !important;
-			}
-		}
-	}
-
-	if not (containerRatio-sidebar)==350px {
-		td .magazine__subscribe {
-			gap: 10px !important;
-		}
-
-		td .magazine__subscribe div,
-		td .magazine__subscribe form[name="magazine_subscribe"] .btn.active {
-			border-radius: var(--kraftbinBorderRadius) !important;
-		}
-
-		td .magazine__subscribe > form[name*="subscribe"] .btn {
-			border-radius: var(--kraftbinBorderRadius) !important;
-		}
-
-		.btn[title="block_magazine"],
-		td aside.user__follow > form[name*="block"] .btn,
-		.btn__secondary,
-		td aside.magazine__subscribe button,
-		td aside.user__actions .btn__secondary {
-			border-radius: var(--kraftbinBorderRadius) !important;
-		}
+	.btn[title="block_magazine"],
+	td aside.user__follow > form[name*="block"] .btn,
+	.btn__secondary,
+	td aside.magazine__subscribe button,
+	td aside.user__actions .btn__secondary {
+		border-radius: var(--kraftbinBorderRadius) !important;
 	}
 }
