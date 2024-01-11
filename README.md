@@ -76,11 +76,14 @@ Screenshots
 Changelog
 </h2>
 
-### v3.9.1
-- More bug fixes and improvements.
+### v3.11.1
+- Added ability to remove "Support Us" card.
 
 <details>
     <summary> Older versions </summary>
+
+### v3.9.1
+- More bug fixes and improvements.
 
 ### v3.8.1
 - Fixed bugs that happened due to the Kbin update.
