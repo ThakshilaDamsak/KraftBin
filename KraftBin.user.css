@@ -50,6 +50,9 @@
  "Hide": "none",
   }
 
+@var checkbox supportUsToggle "Support Us Card" 1
+
+  
 @var select scrolltopToggle "Scroll-to-top Button" {
  "Show": "100%",
  "Hide": "0%",
@@ -150,6 +153,12 @@ url-prefix("https://fedia.io") {
 		}
 	}
 
+	if not (supportUsToggle){
+		.support-us-block {
+			display: none;
+		}
+	}
+	
 	/*Page*/
 	a,
 	p {
