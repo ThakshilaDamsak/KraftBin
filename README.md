@@ -76,11 +76,14 @@ Screenshots
 Changelog
 </h2>
 
-### v3.11.1
-- Added ability to remove "Support Us" card.
+### v3.12.1
+- Fixes and improvenments.
 
 <details>
     <summary> Older versions </summary>
+
+### v3.11.1
+- Added ability to remove "Support Us" card.
 
 ### v3.9.1
 - More bug fixes and improvements.
