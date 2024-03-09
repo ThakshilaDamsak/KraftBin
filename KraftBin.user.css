@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      3.11.1
+@version      3.12.1
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -483,7 +483,18 @@ url-prefix("https://fedia.io") {
 		}
 
 		.entry-cross {
-			margin-top: 10px;
+			margin-top: -5px !important;
+			margin-bottom: 10px;
+		}
+		
+		.comment {
+			margin-top: 2.5px !important;
+			margin-bottom: 2.5px !important;
+		}
+		
+		.comments {
+			padding-top: 0.5px;
+			padding-bottom: 0px;
 		}
 
 		/*Short description*/
