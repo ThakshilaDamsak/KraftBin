@@ -22,6 +22,7 @@ Features
 </h2>
 
 - **Reddit-like Post Layout** (Can be disabled)
+- Option to set "Click to open menus" instead of "hover to open".
 - **Shadows and animations.** (Both can be disabled individually)
 - **Custom Corner Radius.** (Need to disable "Round Edges" option in Kbin settings for this to work)
 - **Ability to disable Federated Warnings.**
