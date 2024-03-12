@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         KraftBin
-@version      3.12.1
+@version      3.13.1
 @namespace    ThakshilaDamsak
 @description  Cleaner and familiar look for Kbin. Derived from Randdose's KoolBin 
 @author       ThakshilaDamsak <thakshiladamsak@hotmail.com> (https://thakshiladamsak.github.io)
@@ -10,6 +10,8 @@
 @preprocessor stylus
 
 @var checkbox customLayout "KraftBin Post Layout" 1
+
+@var checkbox menuClickToOpen "Click to Open Menus" 1
 
 @var checkbox reduceMotion "Reduce Extra Motion" 0
 
@@ -410,6 +412,23 @@ url-prefix("https://fedia.io") {
 	article {
 		padding: 0px !important;
 	}
+	
+	if menuClickToOpen == 1 {
+	
+		.dropdown:focus-within .dropdown__menu, .dropdown:focus .dropdown__menu {
+		  opacity: 1 !important;
+		  transform: rotateX(0) translateX(-50%) !important;
+		  transition: visibility 0s,opacity .2s !important;
+		  visibility: visible !important;
+		}
+
+		.dropdown:hover .dropdown__menu {
+		  opacity: 0;
+		  visibility: hidden;
+		}
+	
+	}
+	
 }
 
 @-moz-document url-prefix("https://kbin.social"),
@@ -685,6 +704,7 @@ url-prefix("https://fedia.io") {
 	.domain__subscribe form[name="domain_subscribe"] .btn__secondary {
 		border-radius: 0 !important;
 	}
+	
 }
 
 @-moz-document url-prefix("https://kbin.social"),
