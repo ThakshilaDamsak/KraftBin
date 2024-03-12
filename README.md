@@ -76,11 +76,15 @@ Screenshots
 Changelog
 </h2>
 
-### v3.12.1
-- Fixes and improvenments.
+### v3.13.1
+- Changed the menu behavior to open on click instead of on hover.
+  This change can be reverted via the userstyle settings.
 
 <details>
     <summary> Older versions </summary>
+
+### v3.12.1
+- Fixes and improvenments.
 
 ### v3.11.1
 - Added ability to remove "Support Us" card.
